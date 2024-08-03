@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 1000px;
+  background-color: rgb(4, 101, 143);
+}
+
+.grid-container {
+  margin-top: 30px;
+  display: inline-grid;
+  grid-template-rows: repeat(16, 2fr);
+  grid-template-columns: repeat(16, 2fr);
+  width: 575px;
+  height: 575px;
+  border: 20px solid rgb(47, 225, 238);
+}
+
+
+.grid-content {
+  border: 1px solid rgb(226, 226, 226);
+  background-color: white;
+}
+
+h1 {
+  margin-top: 15px;
+  font-size: 27px;
+  color: whitesmoke;
+}
+
+h1, p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#create-button-small, #create-button-medium, #create-button-big, #clear-button, 
+#color-red, #color-green, #color-blue, #button-eraser {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+#create-button-small:hover, #create-button-medium:hover, #create-button-big:hover, #clear-button:hover,
+#color-red:hover, #color-green:hover, #color-blue:hover, #button-eraser:hover {
+  cursor: pointer;
+  background-color: aqua;
+  transition: 0.5s;
+}
+
+#color-red, #color-green, #color-blue, #button-eraser {
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 15px;
+}
